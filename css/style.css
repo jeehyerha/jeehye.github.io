@@ -1,0 +1,12 @@
+@font-face{
+	font-family: neocalligraphy;
+	src: url("neocalligraphy.otf") format("opentype");
+	font-weight: 200 700;
+}
+
+body{
+	/* this is the outermost element on your page*/
+	background: yellow;
+	font-family: 'neocalligraphy';
+	font-size: 100px;
+}
