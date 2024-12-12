@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'neocalligraphy';
+    src: url('./fonts/neocalligraphy.otf') format('opentype');
+}
+
+/* 기본 설정 */
+body {
+    margin: 0;
+    font-family: 'neocalligraphy', sans-serif;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* 컨테이너 */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* 그리드와 텍스트 사이 간격 */
+    align-items: center; /* 가로 중앙 정렬 */
+    width: 90%; /* 화면 크기에 비례한 너비 */
+    max-width: 1200px; /* 최대 너비 제한 */
+    text-align: center;
+}
+
+/* 이미지 그리드 */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5열 */
+    grid-template-rows: repeat(2, auto); /* 2행 */
+    gap: 2vw; /* 반응형 간격 */
+    width: 100%; /* 그리드 전체 너비 */
+    margin: 0 auto;
+    position: relative;
+}
+
+/* 각 이미지의 위치 지정 */
+.image1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.image2 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    transform: translateX(0%);
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.image3 {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: relative;
+}
+
+/* 브랜드 이름 */
+.brand-name {
+    font-size: clamp(5rem, 18vw, 15rem); /* 반응형 폰트 크기 */
+    font-family: 'neocalligraphy', sans-serif;
+    font-weight: normal;
+    color: #212121;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 50px; /* 반응형 간격 */
+    align-self: center;
+}
