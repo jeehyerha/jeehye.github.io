@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // ----- 빈 공간 클릭 시 초기화 -----
+    // ----- 빈 공간 클릭 시 초기화 ----
     document.addEventListener('click', (e) => {
         if (!e.target.closest('.image-container')) {
             images.forEach((img) => img.classList.remove('expanded'));
