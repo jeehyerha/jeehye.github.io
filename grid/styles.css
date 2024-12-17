@@ -1,0 +1,84 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fdf7f3;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Poster Container */
+  .poster {
+    position: relative;
+    width: 800px;
+    height: 1200px;
+    background: #fdf7f3;
+    overflow: hidden;
+  }
+  
+  /* Diagonal Bars with Varying Width */
+  .bar {
+    position: absolute;
+    height: 120px;
+    transform: rotate(-45deg);
+  }
+  
+  .red {
+    background: #d41012;
+    width: 130%;
+    top: 100px;
+    left: -200px;
+  }
+  
+  .black {
+    background: #000;
+    width: 180%;
+    top: 300px;
+    left: -350px;
+  }
+  
+  .yellow {
+    background: #f6a300;
+    width: 90%;
+    top: 500px;
+    left: 0px;
+  }
+  
+  .blue {
+    background: #1f3b97;
+    width: 150%;
+    top: 700px;
+    left: -250px;
+  }
+  
+  /* Text Content */
+  .text-content {
+    position: absolute;
+    bottom: 80px;
+    left: 50px;
+    color: #000;
+    line-height: 1.2;
+  }
+  
+  h1 {
+    font-size: 4rem;
+    font-weight: bold;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+  }
+  
+  .details {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
