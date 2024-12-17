@@ -108,4 +108,70 @@ body {
     font-size: 18px;
     color: #333; /* 글 색상 */
     line-height: 1.5;
+} 
+
+
+/* 버튼 컨테이너 스타일 */
+.button-container {
+    display: flex;
+    justify-content: center; /* 가운데 정렬 */
+    margin-top: 20px; /* 위 여백 추가 */
+    margin-bottom: 40px; /* 페이지 하단과의 간격 */
+}
+
+#toggle-mode {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #948cff; /* 버튼 색상 */
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+#toggle-mode:hover {
+    background-color: #efa0f0;
+    color: #333;
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* 다크 모드 스타일 */
+body.dark-mode {
+    background-color: #333; /* 어두운 배경색 */
+    color: #f4f4f4; /* 밝은 글자색 */
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+/* 브랜드 이름 - 다크 모드 */
+body.dark-mode .brand-name {
+    color: #f4f4f4;
+}
+
+/* 이미지 설명 - 다크 모드 */
+body.dark-mode .image-caption {
+    color: #dcdcdc;
+}
+
+/* 텍스트 단락 스타일 - 다크 모드 */
+body.dark-mode .text-container {
+    color: #dcdcdc;
+}
+
+/* 이미지 스크롤 - 다크 모드 */
+body.dark-mode .image-scroll {
+
+    border-radius: 8px;
+}
+
+/* 버튼 스타일 - 다크 모드 */
+body.dark-mode #toggle-mode {
+    background-color: #6d6875;
+    color: #ffffff;
+}
+
+body.dark-mode #toggle-mode:hover {
+    background-color: #4a4e69;
+    color: #ffffff;
 }
